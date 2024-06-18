@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React Js</title>
+    <link rel="styleSheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      function appendHelloWorld() {
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello World!";
+
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+      }
+      //   appendHelloWorld();
+    </script>
+
+    <!-- Injected these two script -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <!-- Core React Code -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- React DOM Code Which is Bridge between React and Browser -->
+    <script src="./react.js"></script>
+  </body>
+</html>
